@@ -52,14 +52,14 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/moi.ico" />
 
         {/* Google Tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7NQFJKW2V"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLP5M9RLPP"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-T7NQFJKW2V');
+              gtag('config', 'G-XLP5M9RLPP');
             `,
           }}
         />
