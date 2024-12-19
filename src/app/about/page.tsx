@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Facebook, LinkedIn, GitHub, Launch, Download } from "@mui/icons-material";
-import AnimatedCircle from "../components/AnimatedCircle";
-
+import { Facebook, LinkedIn, GitHub} from "@mui/icons-material";
 
 const About = () => {
     const [technologies, setTechnologies] = useState([
