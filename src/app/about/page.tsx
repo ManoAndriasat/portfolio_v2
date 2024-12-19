@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { Facebook, LinkedIn, GitHub} from "@mui/icons-material";
-import AnimatedCircle from "../components/AnimatedCircle";
+import { Facebook, LinkedIn, GitHub } from "@mui/icons-material";
 
 const About = () => {
     const technologies = [
@@ -80,7 +79,7 @@ const About = () => {
             link: "https://github.com/ManoAndriasat/FIFO-LIFO.git"
         }
     ];
-    
+
 
     return (
         <>
@@ -108,7 +107,7 @@ const About = () => {
                     <div className="h-0 col-span-1 lg:col-span-3 lg:h-screen bg-transparent"></div>
                     <div className="p-4 lg:col-span-3 lg:h-screen z-999">
                         <div className="lg:pt-20 lg:pl-10 sm:pt-5 md:pt-5 relative h-full">
-                        
+
                             <h1 className="text-7xl sm:text-7xl" style={{ fontFamily: "BoilingThin" }}>
                                 <a href="/">Hi I&apos;m</a>
                                 <br />
@@ -119,8 +118,7 @@ const About = () => {
                             </h2>
                             <h3 className="mt-3 text-sm sm:text-base">
                                 ma.andriasat@gmail.com
-                    </h3>
-                    <AnimatedCircle/>
+                            </h3>
                             <footer
                                 className="mt-20 lg:mt-0 lg:absolute bottom-1 left-0 flex items-center lg:pl-8 lg:p-4 lg:flex-col"
                                 aria-label="Réseaux sociaux de Mano Andriasat"
@@ -168,7 +166,7 @@ const About = () => {
 
                     <div className="p-4 lg:col-span-6 lg:h-screen lg:overflow-y-auto bg-transparent scrollbar">
 
-                        
+
                         <div className="w-full lg:w-6/12 lg:mt-20">
                             <h2 className="text-sm uppercase tracking-widest lg:sr-only pb-5">About</h2>
                             <p>
