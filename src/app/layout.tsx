@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Andriasatarintsoa Manohisoa Alain",
-  description: "Portfolio de ANDRISATARINTSOA Manohisoa Alain alias Mano Andriasat. Découvrez mes projets et réalisations.",
+  title: "ANDRIASATARINTSOA Manohisoa Alain - Portfolio",
+  description: "Portfolio de ANDRIASATARINTSOA Manohisoa Alain alias Mano Andriasat. Découvrez mes projets et réalisations.",
 };
 
 export default function RootLayout({
@@ -17,13 +17,13 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta
           name="keywords"
-          content="Mano Andriasat, Manohisoa Andriasat, Andriasatarintsoa, Portfolio, Développeur Web, Andriasatarintsoa Manohisoa Alain"
+          content="Mano Andriasat, Manohisoa Andriasat, Andriasatarintsoa, Portfolio, Développeur Web, ANDRIASATARINTSOA Manohisoa Alain"
         />
-        <meta name="author" content="Andrisatarintsoa Manohisoa Alain" />
+        <meta name="author" content="ANDRIASATARINTSOA Manohisoa Alain" />
         <meta name="robots" content="index, follow" />
 
         <meta property="og:title" content="Mano Andriasat - Portfolio" />
-        <meta property="og:description" content="Portfolio de ANDRISATARINTSOA Manohisoa Alain alias Mano Andriasat." />
+        <meta property="og:description" content="Portfolio de ANDRIASATARINTSOA Manohisoa Alain alias Mano Andriasat." />
         <meta property="og:image" content="/moi.ico" />
         <meta property="og:url" content="https://www.facebook.com/mano.andriasat?locale=fr_FR" />
         <meta property="og:type" content="website" />
@@ -39,7 +39,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Andrisatarintsoa Manohisoa Alain",
+              name: "ANDRIASATARINTSOA Manohisoa Alain",
               alternateName: "Mano Andriasat",
               description:
                 "Développeur web, spécialiste en projets technologiques et développement d'applications.",
@@ -51,8 +51,10 @@ export default function RootLayout({
         <link rel="icon" href="/moi.ico" />
         <link rel="apple-touch-icon" href="/moi.ico" />
 
-        {/* Google Tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLP5M9RLPP"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XLP5M9RLPP"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -64,10 +66,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
-          {children}
-      </body>
-
+      <body>{children}</body>
     </html>
   );
 }
