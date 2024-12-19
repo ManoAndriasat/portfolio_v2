@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ANDRIASATARINTSOA Manohisoa Alain - Portfolio",
+  title: "Mano Andriasat",
   description: "Portfolio de ANDRIASATARINTSOA Manohisoa Alain alias Mano Andriasat. Découvrez mes projets et réalisations.",
 };
 
