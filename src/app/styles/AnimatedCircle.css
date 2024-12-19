@@ -1,0 +1,53 @@
+.circle {
+  position: absolute; /* Maintenir en position absolue */
+  width: 133px;  /* Taille correcte du cercle */
+  height: 133px; /* Taille correcte du cercle */
+  border-radius: 50%; /* Cercle parfait */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  background: url("../pictures/moi.png");
+  background-size: cover;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: consolas;
+  color: #000000;
+  font-size: 18px;
+  animation: textRotation 8s linear infinite;
+  font-family: "BoilingThin";
+}
+
+  
+  @keyframes textRotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .text span {
+    position: absolute;
+    left: 50%;
+    font-size: calc(1.2em / 1.5); /* 1.2em / 1.5 = 0.8em */
+    transform-origin: 0 calc(100px / 1.5); /* 100px / 1.5 = 66.67px */
+    font-weight: semibold;
+  }
+  
+  .ultra-expand {
+    display: inline-block;
+    transform: scaleX(5); /* Augmente la largeur des 'o' */
+    transform-origin: center;
+  }
+  
+  

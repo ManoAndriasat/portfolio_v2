@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #e9dbc2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #e9dbc2;
+    --foreground: #000000;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Playfair Display, serif;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'BoilingThin'; 
+  src: url('./fonts/BoilingThin.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
