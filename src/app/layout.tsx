@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mano Andriasat - Portfolio",
+  title: "Andriasatarintsoa Manohisoa Alain",
   description: "Portfolio de ANDRISATARINTSOA Manohisoa Alain alias Mano Andriasat. Découvrez mes projets et réalisations.",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta
           name="keywords"
-          content="Mano Andriasat, Manohisoa Andriasat, Andriasatarintsoa, Portfolio, Développeur Web, Andrisatarintsoa Manohisoa Alain"
+          content="Mano Andriasat, Manohisoa Andriasat, Andriasatarintsoa, Portfolio, Développeur Web, Andriasatarintsoa Manohisoa Alain"
         />
         <meta name="author" content="Andrisatarintsoa Manohisoa Alain" />
         <meta name="robots" content="index, follow" />
@@ -30,7 +30,7 @@ export default function RootLayout({
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Mano Andriasat - Portfolio" />
-        <meta name="twitter:description" content="Découvrez les projets et compétences de ANDRISATARINTSOA Manohisoa Alain." />
+        <meta name="twitter:description" content="Découvrez les projets et compétences de ANDRIASATARINTSOA Manohisoa Alain." />
         <meta name="twitter:image" content="/moi.ico" />
 
         <script
