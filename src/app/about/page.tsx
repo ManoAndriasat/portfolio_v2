@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Facebook, LinkedIn, GitHub} from "@mui/icons-material";
+import AnimatedCircle from "../components/AnimatedCircle";
 
 const About = () => {
     const [technologies, setTechnologies] = useState([
@@ -104,7 +105,6 @@ const About = () => {
         `}</style>
             <body className="overflow-auto lg:overflow-hidden sm:overflow-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12">
-
                     <div className="h-0 col-span-1 lg:col-span-3 lg:h-screen bg-transparent"></div>
                     <div className="p-4 lg:col-span-3 lg:h-screen z-999">
                         <div className="lg:pt-20 lg:pl-10 sm:pt-5 md:pt-5 relative h-full">
@@ -119,7 +119,8 @@ const About = () => {
                             </h2>
                             <h3 className="mt-3 text-sm sm:text-base">
                                 ma.andriasat@gmail.com
-                            </h3>
+                    </h3>
+                    <AnimatedCircle/>
                             <footer
                                 className="mt-20 lg:mt-0 lg:absolute bottom-1 left-0 flex items-center lg:pl-8 lg:p-4 lg:flex-col"
                                 aria-label="Réseaux sociaux de Mano Andriasat"

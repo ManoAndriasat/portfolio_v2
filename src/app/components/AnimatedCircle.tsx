@@ -5,7 +5,7 @@ const AnimatedCircle = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => { // Define the event type here
       const { clientX, clientY } = event;
 
       setPosition({ x: clientX, y: clientY });
