@@ -5,7 +5,7 @@ const AnimatedCircle = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => { // Define the event type here
+    const handleMouseMove = (event: MouseEvent) => {
       const { clientX, clientY } = event;
 
       setPosition({ x: clientX, y: clientY });
@@ -19,26 +19,30 @@ const AnimatedCircle = () => {
 
   useEffect(() => {
     const textElement = document.querySelector(".text");
-    let text = textElement.innerText.replace(/-/g, " - ");
-    const characters = text.split("");
-
-    while (characters.length < 30) {
-      text += " " + textElement.innerText.replace(/-/g, " - ");
+  
+    if (textElement instanceof HTMLElement) { 
+      let text = textElement.innerText.replace(/-/g, " - ");
+      const characters = text.split("");
+  
+      while (characters.length < 30) {
+        text += " " + textElement.innerText.replace(/-/g, " - ");
+      }
+  
+      const updatedCharacters = text.split("");
+      const arcLength = 355;
+      const charAngle = arcLength / updatedCharacters.length;
+  
+      textElement.innerHTML = updatedCharacters
+        .map(
+          (char, i) =>
+            `<span style="transform:rotate(${
+              -arcLength / 2 + i * charAngle
+            }deg)">${char}</span>`
+        )
+        .join("");
     }
-
-    const updatedCharacters = text.split("");
-    const arcLength = 355;
-    const charAngle = arcLength / updatedCharacters.length;
-
-    textElement.innerHTML = updatedCharacters
-      .map(
-        (char, i) =>
-          `<span style="transform:rotate(${
-            -arcLength / 2 + i * charAngle
-          }deg)">${char}</span>`
-      )
-      .join("");
   }, []);
+  
 
   return (
     <div

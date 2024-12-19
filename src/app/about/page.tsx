@@ -1,14 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Facebook, LinkedIn, GitHub} from "@mui/icons-material";
 import AnimatedCircle from "../components/AnimatedCircle";
 
 const About = () => {
-    const [technologies, setTechnologies] = useState([
+    const technologies = [
         'java', 'spring boot', 'python', 'django', 'react', 'expo react native', 'next.js', 'postgresql', 'bootstrap', 'tailwind'
-    ]);
+    ];
 
-    const [project, setProject] = useState([
+    const project = [
         {
             date: "JUN - JUL 2024",
             title: "Dynamic Room Reservation Calendar",
@@ -79,7 +79,7 @@ const About = () => {
             description: "FIFO stock management for multiple stores with features such as stock status monitoring with filters, validation of stock exit drafts before actual exit, and handling exceptions in case of false data entries.",
             link: "https://github.com/ManoAndriasat/FIFO-LIFO.git"
         }
-    ]);
+    ];
     
 
     return (
